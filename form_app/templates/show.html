@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Document</title>
+</head>
+<body>
+<h3>Thank you for your order</h3>
+<table style="width:100%">
+    <tr>
+      <th>Fruit Name</th>
+      <th>Quality</th> 
+    </tr>
+    <tr>
+      <td>StrawBerry</td>
+      <td>{{strberry}}</td>
+    </tr>
+    <tr>
+      <td>RoseBerry</td>
+      <td>{{rosberry}}</td>
+
+    </tr>
+    <tr>
+      <td>Apple</td>
+      <td>{{apple}}</td>
+    </tr>
+
+    <tr>
+        <td>Total</td>
+        <td>{{total}}</td>
+      </tr>
+  </table>
+<p>Your Information:</p>
+    <p>Name: {{ name_on_template }}</p>
+
+
+
+</body>
+</html>
